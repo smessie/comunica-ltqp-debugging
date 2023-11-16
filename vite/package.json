@@ -1,0 +1,17 @@
+{
+  "name": "comunica-ltqp-vite-debugging",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "@comunica/query-sparql-link-traversal-solid": "^0.2.0"
+  }
+}

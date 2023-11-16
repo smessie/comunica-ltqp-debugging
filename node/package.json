@@ -1,0 +1,16 @@
+{
+  "name": "comunica-ltqp-node-debugging",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@comunica/query-sparql-link-traversal-solid": "^0.2.0"
+  }
+}

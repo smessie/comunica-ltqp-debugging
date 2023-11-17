@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@comunica/query-sparql-link-traversal-solid": "^0.2.0",
+    "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
     "vue": "^3.3.4"
   },
   "devDependencies": {

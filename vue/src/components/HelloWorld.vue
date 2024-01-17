@@ -1,5 +1,6 @@
 <script setup>
 import {QueryEngine} from "@comunica/query-sparql-link-traversal-solid";
+import {LoggerPretty} from "@/utils/LoggerPretty";
 
 defineProps({
   msg: {
@@ -34,7 +35,11 @@ const query = `
 
 console.log('query', query);
 
-const bindings = await (await engine.queryBindings(query, {sources: ['https://solid.smessie.com/mellon-test/ldesinldp/#EventStream'], lenient: true})).toArray();
+const bindings = await (await engine.queryBindings(query, {
+  sources: ['https://solid.smessie.com/mellon-test/ldesinldp/#EventStream'],
+  lenient: true,
+  log: new LoggerPretty({level: 'debug'}),
+})).toArray();
 
 const result = bindings.map((binding) => {
   return {
